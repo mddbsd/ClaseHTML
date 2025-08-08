@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <link rel="stylesheet" href="./css/layouts.css">
+    <title>Layouts</title>
+</head>
+<body>
+    <header>
+        <h1>Aprendiendo HTML</h1>
+        <p>Clases CFL 414 La Matanza</p>
+    </header>
+    <div>
+        <h3>Tipos de layouts</h3>
+        <h6>FlexBox</h6>
+        <p>El tipo flex, o flexbox, es un modulo de organizacion de elementos HTML. Con flexbox, creamos "cajas" flexibles que se iran acomodando de manera responisva, osea , que cambian su posicion y tamaño de manera dinamica</p>
+        <P>En este ejemplo, el div que contiene los demas divs no tiene establecida la propiedad display: flex, y como vemos se van apilando uno encima del otro</P>
+        <div id="sin-flex">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <p>Este div tiene configurado el display: flex, ahora los elementos contenidos en este bloque se acomodaran de manera flexible</p>
+        <div id="flex-container">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+        </div>
+        <p>Un flexbox siempre contiene estos 2 elementos:</p>
+        <ul>
+            <li>un Contenedor flexible - el elemento div padre</li>
+            <li>Flex Items - los items dentro del contenedor div</li>
+        </ul>
+    </div>
+    <h6>Direccion del flexbox</h6>
+    <p>La propiedad flex-direction especifica la direccion de rendrerizado de los intems DENTRO del flex container<br> Esta propiedad tiene los siguientes valores</p>
+    <ul>
+        <li>row - fila</li>
+        <li>column - columna</li>
+        <li>row-reverse - fila invertida</li>
+        <li>column-reverse - columna invertida</li>
+    </ul>
+    
+    <div id="flex-container-2">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+    <footer>
+        <p>Clases para el curso de programación 2025</p>
+    </footer>
+</body>
+</html>

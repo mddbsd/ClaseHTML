@@ -1,0 +1,39 @@
+#flex-container{
+    display: flex;
+    background: dodgerblue;
+}
+
+#flex-container > div{
+    background-color: darkgreen;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    width: 150pc;
+    margin: 10px;
+
+}
+
+#sin-flex{
+    background: dodgerblue;
+}
+
+#sin-flex > div{
+    background-color: red;
+    margin: 4px;
+    color: white;
+}
+
+#flex-container-2{
+    background-color: dodgerblue;
+    display: flex;
+    flex-direction: 
+}
+
+#flex-container-2 > div{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 150pc;
+    margin: 10px;
+}

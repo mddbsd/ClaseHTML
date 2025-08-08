@@ -3,35 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
     <title>Página principal</title>
     <!--
 }  La etiqueta style nos permite definir estilos fuera de las propiedades
    de las etiquetas. Utilizamos selectores para seleccionar el o los elementos a modificar.
     -->
     <style>
-        /*
-        El primer selector que vemos es el de etiqueta.
-        Solo debemos invocarlo con su nombre
-        El formato es el siguiente. selector{propiedad1: valor1; propiedad2: valor2} 
-        */
-        header{
-            background-color: aqua;
-            text-align: center;
-            padding-top: 20px;
-            padding-bottom: 20px;
-        }
-
-        body{
-            margin-left: 40px;
-            margin-right: 40px;
-            background-color: bisque;
-        }
-
-        footer{
-            background-color: black;
-            color: white;
-            text-align: center;
-        }
         /*El selector de ID. Con el # adelante, podemos seleccionar los elementos
         con el id="contenedor*/
         #contenedor{
@@ -44,12 +22,11 @@
 
         #contenedor > div{
             flex-flow: column;
-            margin-top: 10px;
-            margin-bottom: 10;
             background-color: aquamarine;
             border-color: black;
-            border-radius: 15px;
+            border-radius: 5px;
             border-style: solid;
+            border-width: 1px;
         }
     </style>
 </head>
@@ -62,13 +39,13 @@
        <!--En este contenedor, vamos a mostrar el contenido de nuestra pagina
        a la izquierda un menu, y a la derecha el contenido en si
        Utilizamos la priiedad display=flex para que los divs hijos se acomooden
-       a la izquierda, y luego, flex-grow para darles tamaño--><
+       a la izquierda, y luego, flex-grow para darles tamaño-->
     <div id="contenedor">
         <div style="flex-grow: 2;">
             <h3>Menu</h3>
             <ul>
-                <li>Link 1</li>
-                <li>Link 2</li>
+                <li>Etiquetas</li>
+                <li></li>
                 <li>Link 3</li>
                 <li>Link 4</li>
             </ul>

@@ -1,0 +1,23 @@
+                /*
+        El primer selector que vemos es el de etiqueta.
+        Solo debemos invocarlo con su nombre
+        El formato es el siguiente. selector{propiedad1: valor1; propiedad2: valor2} 
+        */
+        header{
+            background-color: aqua;
+            text-align: center;
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        body{
+            margin-left: 40px;
+            margin-right: 40px;
+            background-color: bisque;
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
