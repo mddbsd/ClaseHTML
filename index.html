@@ -3,61 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/general.css">
-    <title>Página principal</title>
-    <!--
-}  La etiqueta style nos permite definir estilos fuera de las propiedades
-   de las etiquetas. Utilizamos selectores para seleccionar el o los elementos a modificar.
-    -->
-    <style>
-        /*El selector de ID. Con el # adelante, podemos seleccionar los elementos
-        con el id="contenedor*/
-        #contenedor{
-            background-color: beige;
-            display:flex;
-            flex-direction: row;
-        }
-        /*El simbolo > es un combinador, el siguiente estilo va a selecctionar
-        a todos los divs que sean hijos directos del elemento con id="container"*/
-
-        #contenedor > div{
-            flex-flow: column;
-            background-color: aquamarine;
-            border-color: black;
-            border-radius: 5px;
-            border-style: solid;
-            border-width: 1px;
-        }
-    </style>
+    <link rel="stylesheet" href="./css/general.css" />
+    <title>Pagina Principal</title>
 </head>
 <body>
     <header>
         <h1>Aprendiendo HTML</h1>
         <p>Clases CFL 414 La Matanza</p>
     </header>
-    <!--COMIENZA EL CONTENEDOR-->
-       <!--En este contenedor, vamos a mostrar el contenido de nuestra pagina
-       a la izquierda un menu, y a la derecha el contenido en si
-       Utilizamos la priiedad display=flex para que los divs hijos se acomooden
-       a la izquierda, y luego, flex-grow para darles tamaño-->
-    <div id="contenedor">
-        <div style="flex-grow: 2;">
-            <h3>Menu</h3>
-            <ul>
-                <li>Etiquetas</li>
-                <li></li>
-                <li>Link 3</li>
-                <li>Link 4</li>
-            </ul>
-        </div>
-        <div style="flex-grow: 10;">
-            <h3>Contenido</h3>
-        </div>
-
+    <div id="nav">
+        <a href="./index.html">Home</a>
     </div>
-    <!--COMIENZA EL FOOTER-->
+    <div>
+        <h2>Hypervínculos</h2><!--La etiqueta <br> crea un salto de linea-->
+        <p>Un hypervínculo es la herramienta más importante de la escritura +ón con hypertexto-<br>Estos nos permiten desplazarnos a travez de un documento o entre documentos. Funcionan como accesos directos de windows</p>
+        <!--https://symbl.cc/es/html-entities/ Para representar algunos simbolos, tenemos que utilizar su valor en unicode-->
+        <p>Para crear hipervinculos utilizamos la etiqueta &#60;a&#62;. Esta etiqueta contiene un atributo llamado <b>href</b> donde escribimos la ruta al documento que queremos apuntar o al id del elemento HTML en el mismo documento</p>
+        <div id="ejemploa">
+            <a href="#">Este enlace no apunta a ningun lado</a><br>
+            <a href="#enlaces">Este link apunta al elemento HTML con id=enlaces</a><br>
+            <a href="./holamundo.html">Este enlace apunta al documento holamundo.html</a>
+        </div>
+        <p>De esta manera, podemos utilizar los hipervinculos para generar nuestro contenido en hipertexto</p>
+        <h2 id="enlaces">Enlaces</h2>
+        <div>
+            <a href="./contacto.html">contacto</a><br>
+            <a href="./formato.html">formato</a><br>
+            <a href="./layouts.html">layouts</a><br>
+            <a href="./pagina1.html">pagina 2</a><br>
+            <a href="./pagina2.html">pagina 2</a><br>
+        </div>
+    </div> 
+
     <footer>
         <p>Clases para el curso de programación 2025</p>
     </footer>
-</body>
+</body><br>
 </html>

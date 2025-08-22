@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/general.css">
+    <title>Página principal</title>
+    <!--
+}  La etiqueta style nos permite definir estilos fuera de las propiedades
+   de las etiquetas. Utilizamos selectores para seleccionar el o los elementos a modificar.
+    -->
+    <style>
+        /*El selector de ID. Con el # adelante, podemos seleccionar los elementos
+        con el id="contenedor*/
+        #contenedor{
+            background-color: beige;
+            display:flex;
+            flex-direction: row;
+        }
+        /*El simbolo > es un combinador, el siguiente estilo va a selecctionar
+        a todos los divs que sean hijos directos del elemento con id="container"*/
+
+        #contenedor > div{
+            flex-flow: column;
+            background-color: aquamarine;
+            border-color: black;
+            border-radius: 5px;
+            border-style: solid;
+            border-width: 1px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Aprendiendo HTML</h1>
+        <p>Clases CFL 414 La Matanza</p>
+    </header>
+    <!--COMIENZA EL CONTENEDOR-->
+       <!--En este contenedor, vamos a mostrar el contenido de nuestra pagina
+       a la izquierda un menu, y a la derecha el contenido en si
+       Utilizamos la priiedad display=flex para que los divs hijos se acomooden
+       a la izquierda, y luego, flex-grow para darles tamaño-->
+    <div id="contenedor">
+        <div style="flex-grow: 2;">
+            <h3>Menu</h3>
+            <ul>
+                <li>Etiquetas</li>
+                <li></li>
+                <li>Link 3</li>
+                <li>Link 4</li>
+            </ul>
+        </div>
+        <div style="flex-grow: 10;">
+            <h3>Contenido</h3>
+        </div>
+
+    </div>
+    <!--COMIENZA EL FOOTER-->
+    <footer>
+        <p>Clases para el curso de programación 2025</p>
+    </footer>
+</body>
+</html>
