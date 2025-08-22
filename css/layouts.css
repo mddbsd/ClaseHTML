@@ -26,14 +26,45 @@
 #flex-container-2{
     background-color: dodgerblue;
     display: flex;
-    flex-direction: 
+    flex-direction: row;
 }
 
 #flex-container-2 > div{
+    
     background-color: red;
     color: white;
     text-align: center;
     font-size: 30px;
-    width: 150pc;
+    width: 150px;
+    margin: 10px;
+}
+
+#flex-container-3{
+     background-color: dodgerblue;
+     display: flex;
+     flex-wrap: wrap-reverse;
+}
+
+#flex-container-3 > div {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
+    margin: 10px;
+}
+
+#flex-container-4{
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: space-between;
+}
+
+#flex-container-4 > div {
+    background-color: green;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    width: 50px;
     margin: 10px;
 }
